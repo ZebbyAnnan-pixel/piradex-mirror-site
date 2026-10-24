@@ -1,105 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies and TV Shows Websites List - Piradex</title>
-    <meta name="description" content="Movies and TV Shows Websites List - Piradex" />
-    <link rel="icon" type="image/x-icon" href="https://piradex.com/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <title>Piradex Embed</title>
+    <style>
+      :root {
+        --bg: #000000;
+        --green: #4ab128;
+        --green-soft: rgba(74, 177, 40, 0.15);
+        --text: #ffffff;
+      }
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F252TNJ774"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F252TNJ774');
-    </script>
-</head>
-<body>
-    <div class="header">
-        <div class="backup-container">
-            <a href="https://github.com/piradexcom/Piradex" class="backup-button" target="_blank" rel="noopener noreferrer">Backups</a>
-            <a href="https://www.reddit.com/r/Piradex/" class="reddit-button" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
-                <i class="fab fa-reddit-alien"></i>
-            </a>
-        </div>
+      * { box-sizing: border-box; }
 
-        <div class="title-container">
-            <h1><a href="https://piradex.com/">PIRADEX</a></h1>
-            <p>Simple links, neatly indexed</p>
-        </div>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 14px 18px 8px;
+        background: #000;
+        border-bottom: 1px solid rgba(74, 177, 40, 0.4);
+      }
+
+      .open-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        background: var(--green);
+        color: #000;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 6px;
+      }
+
+      .frame-wrap {
+        flex: 1;
+        min-height: 0;
+        background: #000;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        min-height: calc(100vh - 60px);
+        border: 0;
+        display: block;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <a class="open-link" href="https://piradex.com/" target="_blank" rel="noopener noreferrer">Open original site</a>
     </div>
 
-    <div class="container">
-        <div class="category-row">
-            <a href="https://piradex.com/movies-and-tv-shows">Movies/TV Shows</a>
-            <a href="https://piradex.com/anime-list">Anime</a>
-            <a href="https://piradex.com/manga-list">Manga</a>
-            <a href="https://piradex.com/sports-live-streaming">Live Sports</a>
-            <a href="https://piradex.com/live-tv-list">Live TV</a>
-            <a href="https://piradex.com/torrent-sites-list">Torrents</a>
-            <a href="https://piradex.com/games-download-sites">Games</a>
-            <a href="https://piradex.com/music-download-sites-list">Music</a>
-            <a href="https://piradex.com/ebooks-list">eBooks</a>
-            <a href="https://piradex.com/comics-list">Comics</a>
-            <a href="https://piradex.com/asian-drama-list">Asian Drama</a>
-            <a href="https://piradex.com/porn-list">Adult</a>
-            <a href="https://piradex.com/adblockers-list">AdBlockers</a>
-            <a href="https://piradex.com/list-with-best-vpn-service-2025">VPN</a>
-        </div>
-
-        <p class="notice">Be sure to use <strong><a href="https://piradex.com/adblockers-list">AdBlock</a></strong> and <strong><a href="https://piradex.com/list-with-best-vpn-service-2025">VPN</a></strong> if needed.</p>
-
-        <div class="button-container">
-            <a href="https://hokejatv.com/redirect.php" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>soap2night.cc</a>
-            <a href="https://ramoflix.net/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>ramoflix.net</a>
-            <a href="https://doraby.com" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>doraby.com</a>
-            <a href="https://wmovies.org/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>wmovies.org</a>
-            <a href="https://hydrahd.ws/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>hydrahd.ws</a>
-            <a href="https://ww1.goojara.to/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>goojara.to</a>
-            <a href="https://7movies.in/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>7movies.in</a>
-            <a href="https://aether.ist/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>aether.ist</a>
-            <a href="https://fluxtv.cc/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>fluxtv.cc</a>
-            <a href="https://flixer.su/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>flixer.su</a>
-            <a href="https://streamvaults.ru/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>streamvaults.ru</a>
-            <a href="https://primeshows.org/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>primeshows.org</a>
-            <a href="https://67movies.net/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>67movies.net</a>
-            <a href="https://shuttletv.su/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>shuttletv.su</a>
-            <a href="https://popcornmovies.ac/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>popcornmovies.ac</a>
-            <a href="https://www.rivestream.app/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>rivestream.app</a>
-            <a href="https://stellar.gdn/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>stellar.gdn</a>
-            <a href="https://onionplay.st/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>onionplay.st</a>
-            <a href="https://www.lookmovie2.to/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>lookmovie2.to</a>
-            <a href="https://pressplayz.to/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>pressplayz.to</a>
-            <a href="https://nepu.io/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>nepu.io</a>
-            <a href="https://fmoviess.org/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>fmoviess.org</a>
-            <a href="https://soap2dayhd.net/home/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>soap2dayhd.net</a>
-            <a href="https://azmovies.to/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>azmovies.to</a>
-            <a href="https://mapple.club/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>mapple.club</a>
-            <a href="https://streamex.sh/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>streamex.sh</a>
-            <a href="https://opstream.fun/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>opstream.fun</a>
-            <a href="https://latestmovies.net/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>latestmovies.net</a>
-            <a href="https://officialmoviebox.com/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>officialmoviebox.com</a>
-            <a href="https://hdtoday24.at/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>hdtoday24.at</a>
-            <a href="https://cinebytv.com/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>cinebytv.com</a>
-            <a href="https://ridomovies.su/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>ridomovies.su</a>
-            <a href="https://ww7.123moviesfree.net/home/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>123moviesfree.net</a>
-            <a href="https://willowmovies.com/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>willowmovies.com</a>
-            <a href="https://vidplay.top/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>vidplay.top</a>
-            <a href="https://cinemaos.live/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>cinemaos.live</a>
-            <a href="https://ww.yesmovies.ag/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>yesmovies.ag</a>
-            <a href="https://anixtv.us.cc/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>anixtv.us.cc</a>
-            <a href="https://www.primewire.mov/home" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>primewire.mov</a>
-            <a href="https://moviepire.ru/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>moviepire.ru</a>
-            <a href="https://flicker-mini.pages.dev/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>flicker-mini.pages.dev</a>
-            <a href="https://ww1.m4uhd.page/" class="play-button" target="_blank" rel="noopener noreferrer"><i class="fas fa-play"></i>m4uhd.page</a>
-        </div>
+    <div class="frame-wrap">
+      <iframe src="https://piradex.com/" title="Piradex"></iframe>
     </div>
-
-    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"c33d5a8bd4d14123804c00e52f391197","r":1,"spa":2}' crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
 
